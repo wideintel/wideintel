@@ -1,49 +1,72 @@
 {
-  "platform": "WideIntel Arsenal",
-  "version": "3.0.0",
-  "description": "A comprehensive suite of 50+ Free OSINT, Digital Forensics, and Cyber Investigation tools for Law Enforcement and Researchers.",
+  "platform": "WideIntel Intelligence Ecosystem",
+  "version": "3.1.0",
+  "author": "WideIntel Operations",
+  "contact": "https://www.wideintel.org/contact",
+  "contribute": "https://www.wideintel.org/contribute",
+  "description": "Tactical infrastructure for digital forensics, OSINT, and official investigations. Featuring 50+ public arsenal modules.",
   "website": "https://www.wideintel.org/",
   "tools_directory": "https://www.wideintel.org/freetools/",
-  "license": "Free for Public Use",
+  "license": "Proprietary / Free Public Arsenal",
   "total_tools": 50,
+  "ecosystem_layers": [
+    {
+      "layer": "Restricted Grid",
+      "access": "Law Enforcement Only",
+      "url": "https://www.wideintel.org/access"
+    },
+    {
+      "layer": "Public Arsenal",
+      "access": "Open Community",
+      "url": "https://www.wideintel.org/freetools/"
+    }
+  ],
   "categories": [
     {
       "name": "Indian Intelligence Suite",
       "id": "indian_intel",
+      "access_type": "Public",
       "tools": [
         {
           "name": "CDR Processor",
-          "description": "Analyze Call Detail Records for Indian ISPs (Jio, Airtel, VI, BSNL). Includes link analysis and tower mapping.",
+          "tags": ["Jio", "Airtel", "BSNL", "Call Logs", "Forensics"],
+          "description": "Professional Call Detail Record analyzer with link visualization and tower mapping.",
           "url": "https://www.wideintel.org/freetools/cdr_processor"
         },
         {
           "name": "BSA Analyzer",
-          "description": "Bank Statement Analysis tool to trace fund flow and identify suspect UPI IDs.",
+          "tags": ["Banking", "UPI", "Money Trail", "Fraud Investigation"],
+          "description": "Financial forensic tool for Bank Statement Analysis and UPI flow tracing.",
           "url": "https://www.wideintel.org/freetools/bsa_analyzer"
         },
         {
           "name": "TSDP Parser",
-          "description": "AI-powered Transaction Screenshot Data Parser. Extracts UTR, Amount, and Date from images.",
+          "tags": ["OCR", "AI", "Transaction", "Evidence"],
+          "description": "AI-powered Transaction Screenshot Data Parser for instant UTR extraction.",
           "url": "https://www.wideintel.org/freetools/tsdp_parser"
         },
         {
           "name": "Lat Long Mapper",
-          "description": "Plot suspect coordinates, calculate air distance, and animate movement routes on maps.",
+          "tags": ["GIS", "Route Animation", "Tracking", "Mapping"],
+          "description": "Geospatial coordinate plotting and tactical route animation engine.",
           "url": "https://www.wideintel.org/freetools/llm_mapper"
         },
         {
           "name": "IFSC Lookup",
-          "description": "Bulk lookup for Indian Financial System Codes with branch geolocation.",
+          "tags": ["Banking", "IFSC", "Branch Locator"],
+          "description": "Bulk Indian Financial System Code lookup with branch geolocation.",
           "url": "https://www.wideintel.org/freetools/ifsc_lookup"
         },
         {
           "name": "Cell Tower Locator",
-          "description": "Triangulate approximate location based on Cell ID and LAC data.",
+          "tags": ["LAC", "CID", "Triangulation", "Tower"],
+          "description": "Cell-ID based triangulation for approximate physical location recovery.",
           "url": "https://www.wideintel.org/freetools/cell_tower_locator"
         },
         {
           "name": "CDR Analyzer Lite",
-          "description": "Standard Call Detail Record analysis utility for quick checks.",
+          "tags": ["Quick Check", "Call Logs"],
+          "description": "Tactical quick-analysis utility for Call Detail Records.",
           "url": "https://www.wideintel.org/freetools/cdr_analyzer"
         }
       ]
@@ -51,247 +74,62 @@
     {
       "name": "OSINT & Reconnaissance",
       "id": "osint",
+      "access_type": "Public",
       "tools": [
         {
           "name": "Advanced Dork Builder",
-          "description": "GUI-based Google Dork generator for finding sensitive files and directories.",
+          "tags": ["Google Dorks", "Recon", "Data Leak"],
+          "description": "Strategic GUI for building complex Google Dork queries.",
           "url": "https://www.wideintel.org/freetools/dork_builder"
         },
         {
           "name": "Username Searcher",
-          "description": "Check username availability across 100+ social media platforms.",
+          "tags": ["Social Media", "Profile Finder", "Account Check"],
+          "description": "Multi-platform account discovery across 100+ social networks.",
           "url": "https://www.wideintel.org/freetools/username_searcher"
         },
         {
           "name": "Elite Persona Generator",
-          "description": "Create detailed fake identities for undercover operations.",
+          "tags": ["OPSEC", "Undercover", "Synthetic Identity"],
+          "description": "Creation of high-fidelity synthetic identities for tactical operations.",
           "url": "https://www.wideintel.org/freetools/persona_generator"
         },
         {
           "name": "IoT Dork Generator",
-          "description": "Generate Shodan and Google dorks for finding open cameras and IoT devices.",
+          "tags": ["Shodan", "Camera", "Infrastructure"],
+          "description": "Shodan-style dorking for open cameras and industrial systems.",
           "url": "https://www.wideintel.org/freetools/iot_dork_generator"
         },
         {
           "name": "Email Permutator",
-          "description": "Generate potential email variations for a target name.",
+          "tags": ["Lead Gen", "Email Discovery", "Validation"],
+          "description": "Logic engine for generating potential corporate email variations.",
           "url": "https://www.wideintel.org/freetools/email_permutator"
         },
         {
           "name": "Typosquatting Tool",
-          "description": "Generate potential phishing domain variations (DNSTwist Lite).",
+          "tags": ["Phishing", "Domain Defense", "DNS"],
+          "description": "Reconnaissance of potential phishing domain variations.",
           "url": "https://www.wideintel.org/freetools/typosquatting_tool"
         },
         {
-          "name": "UA Parser",
-          "description": "Decode User-Agent strings to identify device, OS, and browser details.",
-          "url": "https://www.wideintel.org/freetools/ua_parser"
-        },
-        {
           "name": "Whois Lookup",
-          "description": "Retrieve domain registration, expiry, and ownership details.",
+          "tags": ["Domain Ownership", "Registrar", "Expiry"],
+          "description": "In-depth domain registration and ownership intelligence.",
           "url": "https://www.wideintel.org/freetools/whois_lookup"
         },
         {
           "name": "Subdomain Scanner",
-          "description": "Discover hidden subdomains of a target website.",
+          "tags": ["Asset Discovery", "Attack Surface"],
+          "description": "Automated discovery of hidden web assets and subdomains.",
           "url": "https://www.wideintel.org/freetools/subdomain_scanner"
-        },
-        {
-          "name": "DNS Propagation",
-          "description": "Check DNS records (A, MX, NS) globally across multiple servers.",
-          "url": "https://www.wideintel.org/freetools/dns_propagation"
-        },
-        {
-          "name": "Reverse Image Search",
-          "description": "Perform multi-engine image search to find source and duplicates.",
-          "url": "https://www.wideintel.org/freetools/reverse_image_search"
-        }
-      ]
-    },
-    {
-      "name": "Digital Forensics",
-      "id": "forensics",
-      "tools": [
-        {
-          "name": "Image ELA Analyzer",
-          "description": "Error Level Analysis to detect fake or photoshopped images.",
-          "url": "https://www.wideintel.org/freetools/ela_analyzer"
-        },
-        {
-          "name": "Steganography Analyzer",
-          "description": "Detect and extract hidden data within image files (LSB).",
-          "url": "https://www.wideintel.org/freetools/stego_analyzer"
-        },
-        {
-          "name": "WhatsApp Forensic Viewer",
-          "description": "Visualize exported WhatsApp chat logs (.txt) in a readable format.",
-          "url": "https://www.wideintel.org/freetools/whatsapp_viewer"
-        },
-        {
-          "name": "PDF Metadata Extractor",
-          "description": "Extract header info and hidden metadata from PDF files.",
-          "url": "https://www.wideintel.org/freetools/pdf_metadata"
-        },
-        {
-          "name": "Stylometry Analyzer",
-          "description": "Analyze writing style and authorship attribution.",
-          "url": "https://www.wideintel.org/freetools/stylometry_analyzer"
-        },
-        {
-          "name": "Base64 File Converter",
-          "description": "Convert any file to Base64 string and back for forensic analysis.",
-          "url": "https://www.wideintel.org/freetools/base64_file"
-        }
-      ]
-    },
-    {
-      "name": "Network & Cyber Ops",
-      "id": "network_ops",
-      "tools": [
-        {
-          "name": "IP Calculator",
-          "description": "CIDR and Subnet mask calculations for network mapping.",
-          "url": "https://www.wideintel.org/freetools/ip_calculator"
-        },
-        {
-          "name": "MAC Lookup",
-          "description": "Identify device manufacturer using MAC Address OUI.",
-          "url": "https://www.wideintel.org/freetools/mac_lookup"
-        },
-        {
-          "name": "Email Header Analyzer",
-          "description": "Trace email origin, path, and delays via header analysis.",
-          "url": "https://www.wideintel.org/freetools/email_header_analyzer"
-        },
-        {
-          "name": "Log Anomaly Heatmap",
-          "description": "Visual detection of activity spikes in server log files.",
-          "url": "https://www.wideintel.org/freetools/log_heatmap"
-        },
-        {
-          "name": "Server Log Viewer",
-          "description": "Lightweight visualizer for parsing large server logs.",
-          "url": "https://www.wideintel.org/freetools/log_viewer"
-        },
-        {
-          "name": "Nmap Visualizer",
-          "description": "Visualize Nmap XML scan results in a browser-friendly format.",
-          "url": "https://www.wideintel.org/freetools/nmap_visualizer"
-        },
-        {
-          "name": "URL Forensics",
-          "description": "De-obfuscate malicious URLs and analyze query parameters.",
-          "url": "https://www.wideintel.org/freetools/url_forensics"
-        }
-      ]
-    },
-    {
-      "name": "Threat Intelligence",
-      "id": "threat_intel",
-      "tools": [
-        {
-          "name": "IOC Extractor",
-          "description": "Extract IPs, Domains, and Hashes from threat reports.",
-          "url": "https://www.wideintel.org/freetools/ioc_extractor"
-        },
-        {
-          "name": "Phishing Kit Analyzer",
-          "description": "Analyze suspicious PHP/JS scripts and phishing kits safely.",
-          "url": "https://www.wideintel.org/freetools/phishing_analyzer"
-        },
-        {
-          "name": "Onion Validator",
-          "description": "Check format validity of Dark Web V3 onion links.",
-          "url": "https://www.wideintel.org/freetools/onion_validator"
-        },
-        {
-          "name": "Visual Link Analysis",
-          "description": "Offline Mini-Maltego for visualizing connections between entities.",
-          "url": "https://www.wideintel.org/freetools/visual_link_analysis"
-        },
-        {
-          "name": "Breach Parser",
-          "description": "Process and search through large breach dumps efficiently.",
-          "url": "https://www.wideintel.org/freetools/breach_parser"
-        }
-      ]
-    },
-    {
-      "name": "Utilities & Crypto",
-      "id": "utilities",
-      "tools": [
-        {
-          "name": "Cyber Swiss Knife",
-          "description": "Universal Encoder/Decoder (Base64, Hex, Rot13, URL).",
-          "url": "https://www.wideintel.org/freetools/cyber_swiss_knife"
-        },
-        {
-          "name": "Hash Toolkit",
-          "description": "Generate and Identify Hash types (MD5, SHA1, SHA256).",
-          "url": "https://www.wideintel.org/freetools/hash_toolkit"
-        },
-        {
-          "name": "Hashcat Generator",
-          "description": "Build complex Hashcat cracking commands via GUI.",
-          "url": "https://www.wideintel.org/freetools/hashcat_generator"
-        },
-        {
-          "name": "JWT Debugger",
-          "description": "Decode, verify, and analyze JSON Web Tokens.",
-          "url": "https://www.wideintel.org/freetools/jwt_tool"
-        },
-        {
-          "name": "Password Strength Tool",
-          "description": "Test password strength and generate secure passwords.",
-          "url": "https://www.wideintel.org/freetools/password_strength"
-        },
-        {
-          "name": "Credit Card Validator",
-          "description": "Validate credit card numbers and check BIN information.",
-          "url": "https://www.wideintel.org/freetools/credit_card_validator"
-        },
-        {
-          "name": "Secure QR Tool",
-          "description": "Generate or decode QR codes safely (Quishing protection).",
-          "url": "https://www.wideintel.org/freetools/qr_tool"
-        },
-        {
-          "name": "Report Builder",
-          "description": "Generate instant PDF investigation reports.",
-          "url": "https://www.wideintel.org/freetools/report_builder"
-        },
-        {
-          "name": "Unix Timestamp Converter",
-          "description": "Convert Epoch timestamps to human-readable dates.",
-          "url": "https://www.wideintel.org/freetools/unix_timestamp"
-        },
-        {
-          "name": "JSON Analyzer",
-          "description": "Format, validate, and minify JSON data.",
-          "url": "https://www.wideintel.org/freetools/json_analyzer"
-        },
-        {
-          "name": "Regex Builder",
-          "description": "Construct regular expressions for data scraping.",
-          "url": "https://www.wideintel.org/freetools/regex_builder"
-        },
-        {
-          "name": "Htaccess Generator",
-          "description": "Create secure Apache configuration files.",
-          "url": "https://www.wideintel.org/freetools/htaccess_generator"
-        },
-        {
-          "name": "Markdown Editor",
-          "description": "Live preview Markdown editor for documentation.",
-          "url": "https://www.wideintel.org/freetools/markdown_editor"
-        },
-        {
-          "name": "Meta Tag Generator",
-          "description": "Generate SEO and Social Media meta tags.",
-          "url": "https://www.wideintel.org/freetools/meta_tag_generator"
         }
       ]
     }
+  ],
+  "compliance": [
+    "ISO/IEC 27037 Principles",
+    "Zero-Knowledge Architecture",
+    "Privacy-First Execution"
   ]
 }
